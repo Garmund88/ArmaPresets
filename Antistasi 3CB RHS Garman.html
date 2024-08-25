@@ -13,30 +13,51 @@ body {
     padding: 0;
     color: #00FF00;  /* Bright green for text */
     background: #000;  /* Black background */
-    font-family: monospace;  /* Basic monospaced font for terminal feel */
 }
 
-h1 {
-    padding: 20px 20px 0 20px;
-    color: #00FF00;  /* Same bright green for headers */
-    font-weight: bold;
-    font-size: 2em;  /* Adjusted size for better readability */
-    margin: 0;
-}
-
-em {
-    font-style: italic;
-    color: #32CD32;  /* Lighter green for emphasis */
+body, th, td {
+    font: 95%/1.3 "Courier New", Courier, monospace;  /* Use a monospaced font for a terminal feel */
 }
 
 td {
     padding: 3px 30px 3px 0;
 }
 
-.before-list, .mod-list, .dlc-list, .footer, .whups {
+h1 {
+    padding: 20px 20px 0 20px;
+    color: #00FF00;  /* Same bright green for headers */
+    font-weight: bold;  /* Make headers stand out */
+    font-family: "Courier New", Courier, monospace;  /* Monospaced font */
+    font-size: 2.5em;  /* Slightly smaller font for old terminal feel */
+    margin: 0;
+}
+
+em {
+    font-variant: italic;
+    color: #32CD32;  /* A lighter green for emphasis */
+}
+
+.before-list {
+    padding: 5px 20px 10px 20px;
+}
+
+.mod-list {
+    background: #101010;  /* Dark gray for subtle contrast */
     padding: 20px;
-    background: #101010;  /* Dark gray background for sections */
-    color: #808080;  /* Light gray for text in these areas */
+}
+
+.dlc-list {
+    background: #101010;  /* Dark gray for subtle contrast */
+    padding: 20px;
+}
+
+.footer {
+    padding: 20px;
+    color: #808080;  /* Light gray for footer */
+}
+
+.whups {
+    color: #808080;  /* Light gray for less important text */
 }
 
 a {
